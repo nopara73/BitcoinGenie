@@ -13,9 +13,9 @@ namespace BitcoinGenie
         {
 			WriteLine("Howdy friend, I am your Bitcoin genie. What's your wish?");
 			var command = ReadLine();
-			if (command == "I want to know what is my scriptPubKey")
+			if (command == "I want to know a scriptPubKey")
 			{
-				WriteLine("Sure, I'll help you, what is your bitcoin address?");
+				WriteLine("Sure, I'll help you, what is the bitcoin address?");
 				var addressString = ReadLine();
 				var address = BitcoinAddress.Create(addressString);
 				WriteLine(address.ScriptPubKey);
