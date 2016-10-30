@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{50DDC872-2C08-4052-BADD-B3933BB35D57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4187E8C9-3C04-45EA-8558-3FAADE4BEC5E}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BitcoinGenie", "src\BitcoinGenie\BitcoinGenie.xproj", "{53B713BC-C036-486E-B5AA-3DE5E8406076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B713BC-C036-486E-B5AA-3DE5E8406076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B713BC-C036-486E-B5AA-3DE5E8406076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B713BC-C036-486E-B5AA-3DE5E8406076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B713BC-C036-486E-B5AA-3DE5E8406076}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53B713BC-C036-486E-B5AA-3DE5E8406076} = {50DDC872-2C08-4052-BADD-B3933BB35D57}
+	EndGlobalSection
+EndGlobal
