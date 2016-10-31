@@ -48,7 +48,6 @@ namespace BitcoinGenie
 				WriteLine("Now let's contruct the output");
 				WriteLine("What is the scriptPubKey you want to send your bitcoins to?");
 				var scriptPubKey = new Script(ReadLine());
-				//var scriptPubKey = PayToPubkeyHashTemplate.Instance.GenerateScriptPubKey(new KeyId(.Split(' ')[2]));
 				WriteLine("How much bitcoins you want to send there?");
 				var amount = new Money(Convert.ToDecimal(ReadLine(), CultureInfo.InvariantCulture), MoneyUnit.BTC);
 				tx.Outputs.Add(new TxOut(amount, scriptPubKey));
