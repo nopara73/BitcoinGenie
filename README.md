@@ -42,7 +42,7 @@ Clone or download [this github repository](https://github.com/nopara73/BitcoinGe
   `dotnet restore`  
   `dotnet build`
   
-### Run the software:
+### Run:
 So far you downloaded the .NET Core Framework, my project, restored its dependencies and built the software. An other way to put it: you installed it.  
   
 To run the software:
