@@ -37,7 +37,7 @@ Clone or download [this github repository](https://github.com/nopara73/BitcoinGe
 
 ### Build  
   
-1. Open a terminal/console window in BitcoinGenie/src/BitcoinGenie folder.  
+1. Open a command line or terminal window in BitcoinGenie/src/BitcoinGenie folder.  
 2. Type:  
   `dotnet restore`  
   `dotnet build`
@@ -47,7 +47,7 @@ So far you downloaded the .NET Core Framework, my project, restored its dependen
   
 To run the software:
   
-1. Open a terminal/console window in BitcoinGenie/src/BitcoinGenie folder.
+1. Open a command line or terminal window in BitcoinGenie/src/BitcoinGenie folder.
 2. Type: `dotnet run`
   
 ## For developers
