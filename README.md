@@ -8,16 +8,16 @@ CodeProject - [Create a Bitcoin transaction by hand](http://www.codeproject.com/
 
 ## Download / Run
 
-###Prerequisites
+### Prerequisites
 
-####Install the .NET Core SDK:
+#### Install the .NET Core SDK:
 
-#####Windows
+##### Windows
 
 1. At the time of writing this is the most recent version: https://go.microsoft.com/fwlink/?LinkID=827524
 2. But you can always find the most up-to-date one here: https://www.microsoft.com/net/core#windows
 
-#####Ubuntu 16.04
+##### Ubuntu 16.04
 
 1. At the time of writing this is how you install the most recent version:  
   `sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'`  
