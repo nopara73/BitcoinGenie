@@ -1,16 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26114.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{50DDC872-2C08-4052-BADD-B3933BB35D57}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4187E8C9-3C04-45EA-8558-3FAADE4BEC5E}"
-	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
-	EndProjectSection
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BitcoinGenie", "src\BitcoinGenie\BitcoinGenie.xproj", "{53B713BC-C036-486E-B5AA-3DE5E8406076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinGenie", "src\BitcoinGenie\BitcoinGenie.csproj", "{53B713BC-C036-486E-B5AA-3DE5E8406076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
