@@ -17,7 +17,7 @@ namespace BitcoinGenie
 			{
 				WriteLine("Sure, I'll help you, what is the bitcoin address?");
 				var addressString = ReadLine();
-				var address = BitcoinAddress.Create(addressString);
+				var address = BitcoinAddress.Create(addressString, Network.Main);
 				WriteLine(address.ScriptPubKey);
 			}
 			if(command == "I want to create a transaction")
@@ -60,7 +60,10 @@ namespace BitcoinGenie
 				WriteLine("Now tell me your privateKey so I can sign the transaction:");
 				var privKey = new BitcoinSecret(ReadLine());
 				tx.Inputs.First().ScriptSig = privKey.ScriptPubKey;
-				tx.Sign(privKey, assumeP2SH: false);
+
+				var coins = tx.Inputs.Select(txin => new Coin(txin.PrevOut, new TxOut { ScriptPubKey = txin.ScriptSig })); 
+
+				tx.Sign(privKey, coins.ToArray());
 				WriteLine($"You signed your transaction on the {privKey.Network}");
 				
 				WriteLine("Here is how your final transaction looks like:");
