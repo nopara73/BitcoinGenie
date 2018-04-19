@@ -5,10 +5,8 @@
     <AssemblyName>BitcoinGenie</AssemblyName>
     <OutputType>Exe</OutputType>
     <PackageId>BitcoinGenie</PackageId>
-    <PackageTargetFallback>$(PackageTargetFallback);dnxcore50</PackageTargetFallback>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCompanyAttribute>BitcoinGenie</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>BitcoinGenie</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
   <ItemGroup>
