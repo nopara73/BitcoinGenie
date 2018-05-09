@@ -17,13 +17,27 @@ CodeProject - [Create a Bitcoin transaction by hand](http://www.codeproject.com/
 1. At the time of writing this is the most recent version: https://go.microsoft.com/fwlink/?LinkID=827524
 2. But you can always find the most up-to-date one here: https://www.microsoft.com/net/core#windows
 
+##### Ubuntu
+
+1. Register Microsoft signature key in order to verify the authenticity of the software that you need to download and install.
+
 ##### Ubuntu 16.04
 
-1. At the time of writing this is how you install the most recent version:  
-  `sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotnet-release/ xenial main" > /etc/apt/sources.list.d/dotnetdev.list'`  
-  `sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893`  
-  `sudo apt-get update`  
-  `sudo apt-get install dotnet-dev-1.0.0-preview2-003131`  
+`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`
+`sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg`
+`sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list'`
+
+##### Ubuntu 17.10
+
+`curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`
+`sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg`
+`sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list'`
+
+##### Ubuntu 16.04 / 17.10
+
+`sudo apt-get install apt-transport-https`
+`sudo apt-get update`
+`sudo apt-get install dotnet-sdk-2.1.105`
 
 2. But you can always find the most up-to-date one here: https://www.microsoft.com/net/core#ubuntu
 
@@ -34,6 +48,8 @@ https://www.microsoft.com/net/core
 ### Download
 
 Clone or download [this github repository](https://github.com/nopara73/BitcoinGenie/).
+
+`git clone  https://github.com/nopara73/BitcoinGenie.git`
 
 ### Build  
   
